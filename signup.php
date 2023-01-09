@@ -61,14 +61,13 @@ a {
 </head>
 <body>
 <center>
-<form>
 		
-
+<form action="process.php" method="POST"  class="row g-3 needs-validation" novalidate>
 		<div class="container">
   <h3>Form Validation</h3>
   <p>Try to submit the form.</p>
     
-	<form action="process.php" method="POST"  class="row g-3 needs-validation" novalidate>
+
 <div class="col-md-4">
 <label for="validationCustom01" class="form-label">Student ID</label>
 <input type="text" class="form-control" name="ID" placeholder="22-0001" required>
@@ -124,7 +123,7 @@ placeholder="joserizal@gmail.com" required>
  
  <div class="col-md-3">
 <label for="validationCustom05" class="form-label">Contact CP Number</label>
-<input type="number" class="form-control" name="contact num" required>
+<input type="number" class="form-control" name="contact_num" required>
 <div class="invalid-feedback">
  Please provide a valid contact number.
 </div>
@@ -140,9 +139,9 @@ placeholder="joserizal@gmail.com" required>
  <div class="col-12">
 <button class="btn btn-primary" type="submit" name="submit">Submit form</button>
  </div>
-</form>
-</div>
 
+</div>
+</form>
 
 
 <footer>

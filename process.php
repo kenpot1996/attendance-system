@@ -8,10 +8,11 @@ $mname=$_POST['mname'];
 $fname=$_POST['fname'];
 $course=$_POST['course'];
 $email=$_POST['email'];
-$contactnum=$_POST['contact num'];
+$contactnum=$_POST['contact_num'];
 $password=$_POST['password'];
 
-$mysqli->query("INSERT INTO tblstudents(ID,lname,mname,fname,course,email,contact num,password) 
+// mysqli_query and variable must be no space
+mysqli_query($mysqli,"INSERT INTO tblstudents(stud_id,lname,mname,fname,course,email,contact_num,password) 
 VALUES('$ID','$lname','$mname','$fname','$course','$email','$contactnum','$password')")or die($mysqli->error); 
 }
 $_SESSION['message']="Record has been saved!";
